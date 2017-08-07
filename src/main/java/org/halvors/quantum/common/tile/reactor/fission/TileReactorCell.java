@@ -118,8 +118,8 @@ public class TileReactorCell extends TileRotatable implements ITickable, IMultiB
         }
     };
 
-    public TileReactorCell() {
-
+    public TileReactorCell(String name) {
+        super(name);
     }
 
     @Override
@@ -228,7 +228,7 @@ public class TileReactorCell extends TileRotatable implements ITickable, IMultiB
 
                 // Reactor cell plays random idle noises while operating and above temperature to boil water.
                 if (world.getWorldTime() % 100 == 0 && getTemperature() >= ThermalPhysics.waterBoilTemperature) {
-                    float percentage = Math.min(getTemperature() / meltingPoint, 1.0F);
+                    float percentage = Math.min(getTemperature() / meltingPoint, 1);
 
                     world.playSound(null, pos, QuantumSoundEvents.REACTOR_CELL, SoundCategory.BLOCKS, percentage, 1);
                 }
@@ -285,8 +285,8 @@ public class TileReactorCell extends TileRotatable implements ITickable, IMultiB
             if (world.isRemote) {
                 // Particles of white smoke will rise from above the reactor chamber when above water boiling temperature.
                 if (world.rand.nextInt(5) == 0 && getTemperature() >= ThermalPhysics.waterBoilTemperature) {
-                    world.spawnParticle(EnumParticleTypes.CLOUD, pos.getX() + world.rand.nextInt(2), pos.getY() + 1, pos.getZ() + world.rand.nextInt(2), 0.0D, 0.1D, 0.0D);
-                    world.spawnParticle(EnumParticleTypes.WATER_BUBBLE, pos.getX() + world.rand.nextInt(5), pos.getY(), pos.getZ() + world.rand.nextInt(5), 0.0D, 0.0D, 0.0D);
+                    world.spawnParticle(EnumParticleTypes.CLOUD, pos.getX() + world.rand.nextInt(2), pos.getY() + 1, pos.getZ() + world.rand.nextInt(2), 0, 0.1, 0);
+                    world.spawnParticle(EnumParticleTypes.WATER_BUBBLE, pos.getX() + world.rand.nextInt(5), pos.getY(), pos.getZ() + world.rand.nextInt(5), 0, 0, 0);
                 }
             }
         }

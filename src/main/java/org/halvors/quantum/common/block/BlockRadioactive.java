@@ -8,6 +8,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Blocks;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -15,6 +16,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.halvors.quantum.client.render.particle.ParticleRadioactive;
 import org.halvors.quantum.client.utility.RenderUtility;
+import org.halvors.quantum.common.Quantum;
 import org.halvors.quantum.common.effect.poison.PoisonRadiation;
 
 import java.util.List;
@@ -65,12 +67,16 @@ public abstract class BlockRadioactive extends BlockQuantum {
             }
 
             if (canSpread) {
-                for (int side = 0; side < 4; side++) {
+                for (EnumFacing side : EnumFacing.VALUES) {
                     final BlockPos newPos = new BlockPos(pos.getX() + random.nextInt(3) - 1, pos.getY() + random.nextInt(5) - 3, pos.getZ() + random.nextInt(3) - 1);
-                    final Block block = world.getBlockState(newPos).getBlock();
+                    final IBlockState newState = world.getBlockState(newPos);
 
-                    if (random.nextFloat() > 0.4 && (block == Blocks.FARMLAND || block == Blocks.GRASS)) {
-                        world.setBlockState(newPos, getDefaultState());
+                    if (random.nextFloat() > 0.4) {
+                        if (newState == Blocks.DIRT.getDefaultState()) {
+                            world.setBlockState(newPos, Blocks.WOOL.getDefaultState());
+                        } else if (newState == Blocks.FARMLAND.getDefaultState() || newState == Blocks.GRASS.getDefaultState()) {
+                            world.setBlockState(newPos, getDefaultState());
+                        }
                     }
                 }
 

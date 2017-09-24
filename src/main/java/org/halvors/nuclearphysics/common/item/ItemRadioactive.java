@@ -12,7 +12,7 @@ public class ItemRadioactive extends ItemTooltip {
     }
 
     @Override
-    public void onUpdate(ItemStack itemStack, World world, Entity entity, int int1, boolean type) {
+    public void onUpdate(ItemStack itemStack, World world, Entity entity, int slot, boolean isSelected) {
         if (entity instanceof EntityLivingBase) {
             PoisonRadiation.getInstance().poisonEntity(entity.getPosition(), (EntityLivingBase) entity, 1);
         }

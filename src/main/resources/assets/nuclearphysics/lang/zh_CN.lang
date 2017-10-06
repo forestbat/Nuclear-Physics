@@ -1,0 +1,172 @@
+// Creative tab
+itemGroup.nuclearphysics=核物理
+
+// Blocks
+tile.nuclearphysics.machine.0.name=化学提取机
+tile.nuclearphysics.machine.0.tooltip=将铀矿转化为黄饼, 水变成氘，氘变成氚。
+tile.nuclearphysics.machine.0.text=这个提取机可以提取铀，氘和氚。
+tile.nuclearphysics.control_rod.name=控制棒
+tile.nuclearphysics.control_rod.tooltip=抑制相邻单元之间的裂变反应。
+tile.nuclearphysics.creative_builder.name=创造建筑器
+tile.nuclearphysics.creative_builder.tooltip=仅允许你在创造作弊下使用，自动建造结构。
+tile.nuclearphysics.creative_builder.text=警告！这会直接替换方块而不是掉落方块！你可能会丢东西。
+tile.nuclearphysics.electromagnet.0.name=电磁体
+tile.nuclearphysics.electromagnet.0.tooltip=建立一个电磁场阻止等离子体与粒子的侵袭。
+tile.nuclearphysics.electromagnet.1.name=电磁玻璃
+tile.nuclearphysics.electromagnet.1.tooltip=建立一个电磁场阻止等离子体与粒子的侵袭。
+tile.nuclearphysics.electric_turbine.name=电涡轮
+tile.nuclearphysics.electric_turbine.tooltip=将蒸汽带来的动能转化为电能。
+tile.nuclearphysics.fulmination_generator.name=爆炸发电机
+tile.nuclearphysics.fulmination_generator.tooltip=将爆炸的动能转化为电能。
+tile.nuclearphysics.machine.1.name=气体离心机
+tile.nuclearphysics.machine.1.tooltip=将六氟化铀气体精炼成可用的铀。
+tile.nuclearphysics.machine.1.text=气体离心机通过旋转将六氟化铀气体变成富铀以参与反应。
+tile.nuclearphysics.gas_funnel.name=气体漏斗
+tile.nuclearphysics.gas_funnel.tooltip=收集气体，允许它能被管道输送。
+tile.nuclearphysics.machine.2.name=核锅炉
+tile.nuclearphysics.machine.2.tooltip=将黄饼煮沸成六氟化铀气体。
+tile.nuclearphysics.machine.2.text=核锅炉可以将黄饼烧成六氟化铀气体。
+tile.nuclearphysics.uranium_ore.name=铀矿
+tile.nuclearphysics.uranium_ore.tooltip=珍贵有用的矿石，用于裂变反应。
+tile.nuclearphysics.machine.3.name=粒子加速器
+tile.nuclearphysics.machine.3.tooltip=加速粒子，制造暗物质与反物质。
+tile.nuclearphysics.machine.4.name=等离子加热器
+tile.nuclearphysics.machine.4.tooltip=A plasma heater is used to heat deuterium and tritium to plasma state for fusion power. Plasma must be moved into the reactor cell.
+tile.nuclearphysics.machine.5.name=Quantum Assembler
+tile.nuclearphysics.machine.5.tooltip=Reassembles Dark Matter atoms into usable materials.
+tile.nuclearphysics.radioactive_grass.name=Radioactive Waste
+tile.nuclearphysics.radioactive_grass.tooltip=Generates harmful radiation and spreads around the world, mutating organisms.
+tile.nuclearphysics.reactor_cell.name=Reactor Cell
+tile.nuclearphysics.reactor_cell.tooltip=The primary components for all types of reactors. Fuel rods or plasma may be injected into the cell.
+tile.nuclearphysics.siren.name=Siren
+tile.nuclearphysics.siren.tooltip=Creates an alarm with customizable pitch and volume with a Redstone signal.
+tile.nuclearphysics.thermometer.name=Thermometer
+tile.nuclearphysics.thermometer.tooltip=Reads the temperature at the current coordinate. Shift-right click to lock the reading to a specific coordinate.
+
+// Items
+item.nuclearphysics.wrench.name=Wrench
+item.nuclearphysics.copper_wire.name=Copper Wire
+item.nuclearphysics.motor.name=Motor
+item.nuclearphysics.circuit_basic.name=Basic Circuit
+item.nuclearphysics.circuit_advanced.name=Advanced Circuit
+item.nuclearphysics.circuit_elite.name=Elite Circuit
+item.nuclearphysics.plate_bronze.name=Bronze Plate
+item.nuclearphysics.plate_steel.name=Steel Plate
+item.nuclearphysics.cell.name=Cell
+item.nuclearphysics.cell.tooltip=Contains: %d
+item.nuclearphysics.darkmatter_cell.name=Dark Matter
+item.nuclearphysics.antimatter_cell.0.name=Antimatter
+item.nuclearphysics.antimatter_cell.0.tooltip=125 Milligrams
+item.nuclearphysics.antimatter_cell.1.name=Antimatter
+item.nuclearphysics.antimatter_cell.1.tooltip=1 Gram
+item.nuclearphysics.yellowcake.name=Yellowcake
+item.nuclearphysics.uranium.0.name=Uranium-235
+item.nuclearphysics.uranium.0.tooltip=Enriched Uranium
+item.nuclearphysics.uranium.1.name=Uranium-238
+item.nuclearphysics.uranium.1.tooltip=Breeding Uranium
+item.nuclearphysics.fissile_fuel.name=Fissile Fuel Rod
+item.nuclearphysics.fissile_fuel.tooltip=The primary fuel source for fission reactors.
+item.nuclearphysics.breeder_fuel.name=Breeder Fuel Rod
+item.nuclearphysics.breeder_fuel.tooltip=The fuel source for re-breeding decayed fissile fuels.
+item.nuclearphysics.hazmat_mask.name=Hazmat Mask
+item.nuclearphysics.hazmat_body.name=Hazmat Body
+item.nuclearphysics.hazmat_leggings.name=Hazmat Leggings
+item.nuclearphysics.hazmat_boots.name=Hazmat Boots
+
+// Tooltip
+tooltip.noFluid=No fluid
+tooltip.energy=Energy
+tooltip.inputSlot=Input slot
+tooltip.state=State
+tooltip.empty=Empty
+tooltip.wrench=Wrench
+tooltip.rotate=Rotate
+tooltip.trackingCoordinate=Tracking coordinate
+tooltip.clearedTrackingCoordinate=Cleared tracking coordinate
+tooltip.notTrackingTemperature=Not tracking temperature
+
+tooltip.nuclearphysics.noShift=Hold %dshift %dfor more information
+
+// Gui
+gui.buffer=Buffer
+gui.control.disabled=Disabled
+gui.control.high=High
+gui.control.low=Low
+gui.control.pulse=Pulse
+gui.mode=Mode
+gui.needed=Needed
+gui.remaining=Remaining
+gui.temperature=Temperature
+gui.unit=Unit
+gui.using=Using
+gui.process=Process
+gui.processing=Processing
+gui.ready=Ready
+gui.idle=Idle
+gui.status=Status
+gui.failedToEmitTryRotating=Failed to emit, try rotating
+gui.accelerating=Accelerating
+gui.velocity=Velocity
+gui.storedAntimatter=Stored antimatter
+gui.energyUsed=Energy used
+gui.facing=Facing
+gui.radius=Radius
+
+gui.configuration.category.general=General
+gui.configuration.category.general.tooltip=General settings
+gui.configuration.category.machine=Machine
+gui.configuration.category.machine.tooltip=Settings regarding enabling and disabling of specific machines
+gui.configuration.category.integration=Integration
+gui.configuration.category.integration.tooltip=Settings regarding enabling and disabling of specific mod integrations
+gui.configuration.category.client=Client
+gui.configuration.category.client.tooltip=Client-specific settings
+
+// Fluids
+fluid.deuterium=Deuterium
+fluid.uranium_hexafluoride=Uranium Hexafluoride
+fluid.plasma=Plasma
+fluid.steam=Steam
+fluid.tritium=Tritium
+fluid.toxic_waste=Toxic Waste
+
+// Fluid blocks
+tile.fluid.deuterium.name=Deuterium
+tile.fluid.uranium_hexafluoride.name=Uranium Hexafluoride
+tile.fluid.plasma.name=Plasma
+tile.fluid.plasma.tooltip=Generates extreme heat for boiling water.
+tile.fluid.steam.name=Steam
+tile.fluid.tritium.name=Tritium
+tile.fluid.toxic_waste.name=Toxic Waste
+tile.fluid.toxic_waste.tooltip=Toxic, nuclear waste that pollutes the world.
+
+// Potion
+potion.radiation=Radiation
+
+// Death
+death.attack.radiation=%1$s died from radiation.
+
+// Schematic
+schematic.accelerator.name=Particle Accelerator
+schematic.breeding_reactor.name=Breeding Reactor
+schematic.fission_reactor.name=Fission Reactor
+schematic.fusion_reactor.name=Fusion Reactor
+
+// Color
+color.black=Black
+color.darkBlue=Dark Blue
+color.darkGreen=Dark Green
+color.darkAqua=Dark Aqua
+color.darkRed=Dark Red
+color.purple=Purple
+color.orange=Orange
+color.grey=Grey
+color.darkGrey=Dark Grey
+color.indigo=Indigo
+color.brightGreen=Bright Green
+color.aqua=Aqua
+color.red=Red
+color.pink=Pink
+color.yellow=Yellow
+color.white=White
+color.brown=Brown
+color.brightPink=Bright Pink
